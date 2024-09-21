@@ -8,7 +8,7 @@ This project provides an autocomplete feature for Chess.com usernames.
 
 2. Clone the repository:
    ```
-   git clone https://github.com/yourusername/chesscom-username-autocomplete.git
+   git clone https://github.com/turbotobbe/chesscom-username-autocomplete.git
    cd chesscom-username-autocomplete
    ```
 
