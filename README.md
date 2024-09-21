@@ -19,9 +19,9 @@ This project provides an autocomplete feature for Chess.com usernames.
    venv\Scripts\activate  # On Windows
    ```
 
-4. Install dependencies:
+4. Install the project in editable mode:
    ```
-   pip install -r requirements.txt
+   pip install -e .
    ```
 
 ## Running the Project
@@ -29,7 +29,7 @@ This project provides an autocomplete feature for Chess.com usernames.
 To run the main application:
 
 ```
-python src/main.py
+python src/chesscom_username_autocomplete/main.py
 ```
 
 ## Running Tests
@@ -44,16 +44,14 @@ python -m unittest discover tests
 
 1. Make sure your virtual environment is activated.
 
-2. Install the project in editable mode:
+2. Make changes to the code in the `src/chesscom_username_autocomplete` directory.
+
+3. Add tests in the `tests` directory.
+
+4. To add new dependencies, update the `pyproject.toml` file and run:
    ```
    pip install -e .
    ```
-
-3. Add any new dependencies to `requirements.txt`.
-
-4. Write your code in the `src` directory.
-
-5. Add tests in the `tests` directory.
 
 ## Project Structure
 
@@ -61,16 +59,16 @@ python -m unittest discover tests
 chesscom-username-autocomplete/
 │
 ├── src/
-│   ├── __init__.py
-│   └── main.py
+│   └── chesscom_username_autocomplete/
+│       ├── __init__.py
+│       └── main.py
 │
 ├── tests/
 │   ├── __init__.py
 │   └── test_main.py
 │
 ├── venv/
-├── requirements.txt
-├── setup.py
+├── pyproject.toml
 └── README.md
 ```
 

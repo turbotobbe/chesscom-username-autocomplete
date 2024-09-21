@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "chesscom-username-autocomplete"
+version = "0.1.0"
+description = "Autocomplete feature for Chess.com usernames"
+authors = ["Your Name <your.email@example.com>"]
+packages = [
+    { include = "chesscom_username_autocomplete", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.dev-dependencies]
+black = "^23.3.0"  # Use the latest version available
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+include = '\.pyi?$'
+extend-exclude = '''
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+^/foo.py  # exclude a file named foo.py in the root of the project
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | build
+    | dist
+  )/
+)
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
